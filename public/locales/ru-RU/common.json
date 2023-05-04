@@ -1,0 +1,28 @@
+{
+  "Change": "Изменить",
+  "Copied to clipboard": "Скопировано в буфер обмена",
+  "Copy": "Скопировать",
+  "Data load error": "Ошибка при загрузке данных",
+  "English": "Английский",
+  "Enter manually": "Ввести вручную",
+  "GTIN": "GTIN",
+  "No": "Нет",
+  "Russian": "Русский",
+  "Select file": "Выберите файл",
+  "Yes": "Да",
+  "createMethodType enum": {
+    "CEM": "ЦЭМ",
+    "CM": "Контрактное производство",
+    "CL": "Логистический склад",
+    "SELF_MADE": "Самостоятельное"
+  },
+  "errorId": "Идентификатор ошибки",
+  "id": "Идентификатор",
+  "releaseMethodType enum": {
+    "CROSSBORDER": "Транзит",
+    "IMPORT": "Импорт в РФ",
+    "PRODUCTION": "Производство в РФ",
+    "REMAINS": "Остатки",
+    "REMARK": "Перемаркировка"
+  }
+}

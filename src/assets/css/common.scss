@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.dx-master-detail-cell {
+  background-color: #dcdcdc !important;
+}
+
+/* increased datagrid horizontal scrollbar */
+.dx-datagrid .dx-scrollbar-horizontal.dx-scrollbar-hoverable {
+  height: 13px;
+  .dx-scrollable-scroll {
+    height: inherit;
+  }
+}
+
+/* increased datagrid vertical scrollbar */
+.dx-datagrid .dx-scrollbar-vertical.dx-scrollbar-hoverable {
+  width: 13px;
+  .dx-scrollable-scroll {
+    width: inherit;
+  }
+}
+
+.dx-datagrid .dx-row.dx-selection {
+  background-color: #d8ddff;
+}

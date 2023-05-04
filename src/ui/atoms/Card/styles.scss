@@ -1,0 +1,16 @@
+.card {
+  position: relative;
+  padding: $fold-size * 5 $fold-size * 10 $fold-size * 13 $fold-size * 15;
+  background-color: $color-white;
+  box-shadow: 0 20px 39px -15px rgba(0, 0, 0, 0.4);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $fold-size;
+    height: 100%;
+    background-color: $color-brand-violet-lighten;
+    content: '';
+  }
+}

@@ -1,0 +1,67 @@
+.section-navigation {
+  &__link {
+    display: block;
+    position: relative;
+    padding: $fold-size * 3 $fold-size * 5;
+    border-radius: $fold-size;
+    background-color: $color-white;
+    font-size: $fold-size * 6;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    color: $color-brand-violet-normal;
+    animation-name: slide-in-bottom;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-fill-mode: both;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s linear;
+    user-select: none;
+    &:not(:nth-last-child(1)) {
+      margin-bottom: $fold-size * 4;
+    }
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $fold-size;
+      height: 100%;
+      background-color: $color-brand-violet-lighten;
+      transition: background-color 0.3s linear;
+    }
+    &:hover {
+      color: $color-white;
+      background-color: $color-brand-violet-lighten;
+      &::before {
+        background-color: $color-brand-red-lighten;
+      }
+    }
+    &--disabled {
+      pointer-events: none;
+      animation-name: slide-in-bottom-disabled;
+    }
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom-disabled {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}

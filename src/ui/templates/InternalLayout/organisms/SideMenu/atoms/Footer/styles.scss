@@ -1,0 +1,19 @@
+.side-menu-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $fold-size * 5;
+  color: $color-gray-bg;
+  font-weight: 400;
+  background-color: $color-brand-violet-darken;
+
+  &__link {
+    color: $color-white;
+    text-decoration: underline !important;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

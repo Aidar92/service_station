@@ -1,0 +1,160 @@
+.utrace-logo {
+  position: relative;
+  user-select: none;
+
+  &__image {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__u1,
+  &__u2,
+  &__u3,
+  &__u4,
+  &__u5,
+  &__u6,
+  &__u7,
+  &__u8 {
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  &__u1 {
+    animation-name: u1;
+    animation-delay: 1s;
+  }
+
+  &__u2 {
+    animation-name: u2;
+    animation-delay: 0.1s;
+  }
+
+  &__u3 {
+    animation-name: u3;
+    animation-delay: 0.2s;
+  }
+
+  &__u4 {
+    animation-name: u4;
+    animation-delay: 0.3s;
+  }
+
+  &__u5 {
+    animation-name: u5;
+    animation-delay: 0.4s;
+  }
+
+  &__u6 {
+    animation-name: u6;
+    animation-delay: 0.5s;
+  }
+
+  &__u7 {
+    animation-name: u7;
+    animation-delay: 0.6s;
+  }
+
+  &__u8 {
+    animation-name: u8;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes u1 {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u2 {
+  from {
+    transform: translate3d(-30px, 10px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u3 {
+  from {
+    transform: translate3d(-30px, -10px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u4 {
+  from {
+    transform: translate3d(-10px, -30px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u5 {
+  from {
+    transform: translate3d(10px, -30px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u6 {
+  from {
+    transform: translate3d(10px, -30px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u7 {
+  from {
+    transform: translate3d(30px, -10px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes u8 {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

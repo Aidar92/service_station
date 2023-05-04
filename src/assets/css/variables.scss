@@ -1,0 +1,56 @@
+$fold-size: 3px;
+$header-height: $fold-size * 14;
+$menu-width: 300px;
+
+$color-brand-violet-normal: #373c64;
+$color-brand-violet-lighten: lighten($color-brand-violet-normal, 10%);
+$color-brand-violet-darken: darken($color-brand-violet-normal, 10%);
+$color-brand-red-normal: #f55a4b;
+$color-brand-red-lighten: lighten($color-brand-red-normal, 8%);
+$color-brand-blue-normal: #00a0c8;
+$color-brand-blue-lighten: lighten($color-brand-blue-normal, 10%);
+$color-gray-normal: #8b8b8b;
+$color-gray-bg: #eeeeef;
+$color-gray-lighten: rgba(139, 139, 139, 0.2);
+$color-green: #7fba00;
+$color-white: #fff;
+$color-violet-dx: #495085;
+$color-orange: #e88b0c;
+
+$box-shadow-style: 0 0 10px rgba(0, 0, 0, 0.5);
+
+$animation-fade-in: fade-in 0.6s linear;
+
+@mixin media-laptop {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-sm {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

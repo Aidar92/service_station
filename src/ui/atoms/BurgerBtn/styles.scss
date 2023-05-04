@@ -1,0 +1,58 @@
+$transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+  transform 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+
+.burger-btn {
+  position: relative;
+  box-sizing: border-box;
+  width: 39px;
+  padding: $fold-size * 3;
+  cursor: pointer;
+
+  &__line {
+    position: relative;
+    top: 0;
+    height: 2px;
+    background-color: $color-white;
+    opacity: 1;
+
+    &:not(:nth-last-child(1)) {
+      margin-bottom: 3px;
+    }
+
+    &--position {
+      &_top,
+      &_bottom {
+        transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0.3s,
+          transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      &_middle {
+        opacity: 1;
+        transition: 0.4s opacity;
+      }
+    }
+  }
+
+  &--active {
+    .burger-btn__line {
+      &--position {
+        &_top {
+          top: 5px;
+          transform: rotateZ(45deg);
+          transition: $transition;
+        }
+
+        &_middle {
+          opacity: 0;
+          transition: 0.3s opacity;
+        }
+
+        &_bottom {
+          top: -5px;
+          transform: rotateZ(-45deg);
+          transition: $transition;
+        }
+      }
+    }
+  }
+}

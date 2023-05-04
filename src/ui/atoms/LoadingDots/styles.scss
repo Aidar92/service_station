@@ -1,0 +1,42 @@
+.loading-dots {
+  position: relative;
+  display: flex;
+
+  &--centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__dot {
+    background-color: $color-brand-violet-normal;
+    border-radius: 100%;
+  }
+
+  &__dot--1 {
+    animation: bounce 1s infinite;
+    animation-delay: 0.1s;
+  }
+
+  &__dot--2 {
+    animation: bounce 1s infinite;
+    animation-delay: 0.3s;
+  }
+
+  &__dot--3 {
+    margin-right: 0 !important;
+    animation: bounce 1s infinite ease;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: $fold-size * 8;
+  background-color: $color-brand-violet-normal;
+
+  @include media-mobile {
+    padding-right: $fold-size * 3;
+    padding-left: 0;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+  }
+
+  &__left {
+    flex: 0 0 $menu-width;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: $fold-size * 4;
+    padding-left: $fold-size * 8;
+    background-color: $color-brand-violet-darken;
+
+    @include media-mobile {
+      flex-shrink: 1;
+      background-color: $color-brand-violet-normal;
+    }
+  }
+
+  &__right {
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__logo-link {
+    color: $color-white;
+  }
+
+  &__control {
+    color: $color-white;
+    font-size: $fold-size * 7;
+    cursor: pointer;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $color-brand-blue-lighten;
+    }
+
+    &:not(:nth-last-child(1)) {
+      margin-right: $fold-size * 5;
+    }
+
+    &--profile {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: $fold-size * 4;
+        font-weight: 300;
+        font-size: $fold-size * 5;
+
+        @include media-mobile {
+          display: none;
+        }
+      }
+    }
+
+    &--logout:hover {
+      color: $color-brand-red-normal;
+    }
+  }
+}

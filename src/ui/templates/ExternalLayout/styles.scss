@@ -1,0 +1,33 @@
+.external-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 $fold-size * 3;
+  background-color: $color-brand-violet-normal;
+  background-image: radial-gradient(
+    circle,
+    #495085,
+    #444b7d,
+    #404674,
+    #3b416c,
+    #373c64
+  );
+
+  &__footer,
+  &__content {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &__footer {
+    justify-content: flex-end;
+    padding: $fold-size * 4 0;
+    color: $color-white;
+  }
+
+  &__content {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}

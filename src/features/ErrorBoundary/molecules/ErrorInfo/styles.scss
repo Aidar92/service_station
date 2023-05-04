@@ -1,0 +1,70 @@
+.error-boundary-error-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  @media only screen and (max-height: 600px) {
+    align-items: start;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-areas:
+      'ico ntf'
+      '. btn'
+      '. det';
+
+    @include media-mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    grid-area: ico;
+    align-self: center;
+    margin-right: 20px;
+    color: $color-brand-red-normal;
+    font-size: 40px;
+  }
+
+  &__reload-button {
+    margin: 0 $fold-size * 2;
+  }
+
+  &__notification {
+    grid-area: ntf;
+    font-weight: 500;
+    font-size: $fold-size * 6;
+    line-height: 1.5;
+  }
+
+  &__details-button {
+    grid-area: btn;
+    justify-self: center;
+    margin-top: $fold-size * 10;
+  }
+
+  &__details {
+    grid-area: det;
+    height: 100%;
+    max-height: 300px;
+    margin-top: $fold-size * 5;
+    padding: $fold-size * 5 $fold-size * 10;
+    overflow: auto;
+    color: $color-gray-normal;
+    text-align: left;
+    background-color: $color-white;
+    border-left: $fold-size solid $color-brand-red-normal;
+    box-shadow: 0 2px 6px 3px #c5c5c5;
+  }
+
+  &__details-wrap {
+    margin: $fold-size * 5 0;
+    overflow: unset;
+    font-weight: 300;
+    font-size: $fold-size * 5;
+    line-height: 1.3;
+  }
+}

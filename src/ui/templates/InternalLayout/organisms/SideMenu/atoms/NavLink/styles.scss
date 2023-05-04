@@ -1,0 +1,50 @@
+.side-menu-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 $fold-size * 4;
+  padding: $fold-size * 3 $fold-size * 6;
+  overflow: hidden;
+  color: $color-white;
+  font-weight: 300;
+  font-size: $fold-size * 5;
+  line-height: 1.2;
+  text-decoration: none;
+  border-radius: $fold-size;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-brand-red-normal;
+    content: '';
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-lighten;
+  }
+
+  &--active {
+    background-color: $color-gray-lighten;
+
+    &::before {
+      width: $fold-size;
+    }
+  }
+
+  &--disabled {
+    color: $color-gray-normal;
+    pointer-events: none;
+  }
+
+  &__icon {
+    width: $fold-size * 6 !important;
+    margin-right: $fold-size * 4;
+    text-align: center;
+  }
+}

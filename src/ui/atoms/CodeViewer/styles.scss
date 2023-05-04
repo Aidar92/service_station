@@ -1,0 +1,17 @@
+.code-viewer {
+  padding: $fold-size * 3;
+  margin: 0;
+  border-radius: $fold-size;
+  background: #41444e;
+  font-size: $fold-size * 4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  font-family: Source Code Pro, monospace;
+  font-weight: 600;
+  color: $color-white;
+}

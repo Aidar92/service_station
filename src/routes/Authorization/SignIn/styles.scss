@@ -1,0 +1,125 @@
+.page-sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 560px;
+    overflow: hidden;
+    border-radius: $fold-size;
+    animation: $animation-fade-in;
+
+    @include media-mobile {
+      flex-direction: column;
+      max-width: 360px;
+    }
+
+    @include media-mobile-sm {
+      flex-direction: column;
+      width: 100%;
+      max-width: none;
+      border-radius: 0;
+    }
+  }
+
+  &__card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    background-color: $color-brand-violet-darken;
+
+    @include media-mobile {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: $fold-size * 4 $fold-size * 5;
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto $fold-size * 10;
+    overflow: visible;
+
+    @include media-mobile {
+      width: 51px;
+      height: 51px;
+      margin: 0;
+    }
+  }
+
+  &__logo-title {
+    color: $color-white;
+    font-weight: 800;
+    font-size: $fold-size * 6;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: clipLogoTitle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+    @include media-mobile {
+      font-size: $fold-size * 5;
+    }
+  }
+
+  &__card-right {
+    position: relative;
+    flex: 1 1 auto;
+    max-width: 360px;
+    min-height: 300px;
+    padding: $fold-size * 10 $fold-size * 8 $fold-size * 5;
+    background-color: $color-white;
+
+    @include media-mobile {
+      padding: $fold-size * 10 $fold-size * 5 $fold-size * 5;
+    }
+
+    @include media-mobile-sm {
+      max-width: none;
+    }
+  }
+
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__form-title {
+    flex: 1 1 auto;
+    margin-bottom: $fold-size * 10;
+    font-weight: 400;
+  }
+
+  &__client-logo {
+    flex: 0 0 auto;
+    width: 60px;
+    margin-left: $fold-size * 5;
+  }
+
+  &__credentials-form {
+    margin-bottom: $fold-size * 20;
+  }
+}
+
+@keyframes clipLogoTitle {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}

@@ -1,0 +1,16 @@
+.labeled-group {
+  position: relative;
+  padding: $fold-size * 16 $fold-size * 8 $fold-size * 10;
+  border: solid 1px #ccc;
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: $fold-size * 5;
+    padding: 0 $fold-size * 3;
+    color: $color-brand-violet-darken;
+    font-weight: 500;
+    font-size: $fold-size * 5;
+    transform: translateY(-50%);
+  }
+}

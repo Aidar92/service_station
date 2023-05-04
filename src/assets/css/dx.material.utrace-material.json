@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "key": "@base-accent",
+      "value": "rgba(73, 80, 133, 1)"
+    },
+    {
+      "key": "@base-danger",
+      "value": "rgba(245, 90, 75, 1)"
+    },
+    {
+      "key": "@base-border-radius",
+      "value": "3px"
+    },
+    {
+      "key": "@toast-info-bg",
+      "value": "rgba(73, 80, 133, 1)"
+    },
+    {
+      "key": "@base-warning",
+      "value": "rgba(240, 182, 7, 1)"
+    }
+  ],
+  "baseTheme": "material.purple.light",
+  "outputColorScheme": "utrace-material",
+  "makeSwatch": false,
+  "version": "21.2.4",
+  "widgets": []
+}

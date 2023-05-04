@@ -1,0 +1,26 @@
+// fix perfect scroll position
+.ps__rail-y {
+  z-index: 1;
+}
+
+.side-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-brand-violet-normal;
+  box-shadow: $box-shadow-style;
+
+  &__navigation {
+    padding-top: $fold-size * 7;
+    animation: $animation-fade-in;
+  }
+
+  &__nav-group:not(:nth-last-child(1)) {
+    margin-bottom: $fold-size * 3;
+  }
+
+  &__footer {
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+}

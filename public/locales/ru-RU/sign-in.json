@@ -1,0 +1,23 @@
+{
+  "Authorization": "Вход в систему",
+  "Sign in": "Войти",
+  "AuthSettings": {
+    "Authentication method": "Способ аутентификации",
+    "Interface language": "Язык интерфейса",
+    "Settings": "Настройки",
+    "authType enum": {
+      "CREDENTIALS": "Логин-пароль",
+      "SSO": "Аутентификация через SSO"
+    }
+  },
+  "CredentialsForm": {
+    "Login": "Логин",
+    "Login required": "Логин обязателен",
+    "Password": "Пароль",
+    "Password required": "Пароль обязателен"
+  },
+  "sso error enum": {
+    "A000005": "Пользователь не найден",
+    "A000007": "Невозможно сгенерировать токен"
+  }
+}
